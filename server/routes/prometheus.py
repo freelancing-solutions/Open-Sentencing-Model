@@ -17,7 +17,7 @@ def prometheus_metrics():
 # @prometheus.track_requests
 # def example():
 #    pass
-route_counter = Counter('requests_for_routes', 'Number of requests for specififed routes', ['method', 'endpoint'])
+route_counter = Counter('requests_for_routes', 'Number of requests for specified routes', ['method', 'endpoint'])
 
 def track_requests(route):
     @wraps(route)
